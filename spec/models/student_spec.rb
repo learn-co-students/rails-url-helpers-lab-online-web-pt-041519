@@ -7,7 +7,7 @@ describe Student do
 
   it 'can be created' do
     expect(@student).to be_valid
-  end
+  end 
 
   it 'has an active attribute that defaults to false' do
     expect(@student.active).to eq(false)
