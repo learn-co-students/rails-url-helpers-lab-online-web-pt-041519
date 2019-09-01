@@ -1,1 +1,10 @@
 <h1><%= @student.to_s %></h1>
+<h2>This student is currently 
+  <% if @student.active == false %>
+     inactive.
+  <% else %>
+    active.
+  <% end %>
+</h2>
+<h3>Change status</h3>
+<%= link_to @student.active %>
